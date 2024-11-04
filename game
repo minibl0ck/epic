@@ -1,0 +1,33 @@
+testSection:AddToggle("Toggle", false, function(first)
+    print("ejejejejejeje")
+end)
+
+testSection:AddButton("Button", function(IhateGayPeople)
+    print("button")
+end)
+
+testSection:AddSlider("Speed", 0, 16, 75, 1, function(State)
+    char.Humanoid.WalkSpeed = State
+end)
+
+testSection:AddTextbox("textbox", nil, function(State)
+
+end)
+
+testSection:AddDropdown("Dropdown", {"AH", "ytytyt", "rrro", "awhjdajksd"}, "AH", true, function(dropdown)
+
+end)
+
+local ColorToggle = testSection:AddToggle("ColorPicker w/Toggle", false, function(e)
+
+end)
+
+ColorToggle:AddColorpicker(Color3.fromRGB(75, 0,130), function(ztx)
+
+end)
+
+local ToggleBind = testSection:AddToggle("Keybind w/Toggle", false, function(e)
+
+end)
+
+ToggleBind:AddKeybind()
